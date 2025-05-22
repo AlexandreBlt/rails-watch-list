@@ -1,0 +1,14 @@
+<%= render "navbar" %>
+<div class="row">
+  <div class="banner">
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<%= simple_form_for [@list, @bookmark] do |f|%>
+<%= f.input :comment %>
+<%= f.input :movie_id, collection: @available_movies %>
+<%= f.submit %>
+<% end %>
+</div>
+</div>

@@ -1,0 +1,17 @@
+.banner {
+  background-image: asset-url("Banner-Cap-Cinema.png");
+  background-size: cover;
+  background-position: center;
+  background-color: red;
+  filter: brightness(20%);
+  height: 200px;
+  width: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}

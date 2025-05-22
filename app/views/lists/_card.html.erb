@@ -1,0 +1,15 @@
+<div class="col-4">
+<div class="card mb-3">
+<h4 class="text-decoration-none"><%= link_to list.name %></h4>
+<div class="row d-flex flex-row">
+<% list.bookmarks.each do |bookmark| %>
+<div class="card-body w-50">
+<div class="col-auto d-flex flex-column">
+<%= bookmark.comment %>
+<img src="<%=bookmark.movie.poster_url%>" class="card-img-top h-auto w-auto" alt="...">
+</div>
+</div>
+  <% end %>
+    </div>
+</div>
+</div>

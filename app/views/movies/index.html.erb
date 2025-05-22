@@ -1,0 +1,13 @@
+<%= render "navbar" %>
+<div class="row">
+  <div class="banner">
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<% @movies.each do |movie| %>
+<%= render "card", movie: movie %>
+<% end %>
+</div>
+</div>
+

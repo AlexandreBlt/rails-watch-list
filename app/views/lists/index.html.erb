@@ -1,0 +1,20 @@
+<%= render "navbar" %>
+ <div class="row ">
+ <div class="col-12 ">
+ <div class="banner ">
+ <h1>Vos listes de films préférées</h1>
+</div>
+</div>
+ </div>
+ <div class="container">
+ <div class="row">
+ <h2 class="">My lists</h2>
+ </div>
+ <div class="row">
+<% @lists.each do |list| %>
+<%= render "card", list: list %>
+<% end %>
+</div>
+ </div>
+ </div>
+ </div>

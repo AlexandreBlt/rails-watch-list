@@ -1,0 +1,18 @@
+<%= render "navbar" %>
+<div class="row ">
+ <div class="col-12 ">
+  <div class="banner ">
+  <h1><%= @list.name %></h1>
+  </div>
+<div class="container">
+<div class="row mt-5">
+<%= link_to "Add film", new_list_bookmark_path(@list) %>
+</div>
+<div class="row">
+<% @list.bookmarks.each do |bookmark| %>
+<%= render "cardmovie", bookmark: bookmark %>
+<% end %>
+<div class="col-12">
+</div>
+</div>
+</div>

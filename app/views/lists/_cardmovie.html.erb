@@ -1,0 +1,11 @@
+<div class="col-4">
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title"><%= bookmark.comment %></h5>
+    <img src="<%= bookmark.movie.poster_url%>" class="card-img-top" alt="...">
+    <p class="card-text"><%= bookmark.movie.overview %></p>
+    <p class="card-text"><small class="text-body-secondary"><%= bookmark.movie.rating %>/10 <i class="fa-solid fa-star"></i> </small></p>
+    <%= link_to "delete", list_bookmark_path(bookmark.list, bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+  </div>
+</div>
+</div>
